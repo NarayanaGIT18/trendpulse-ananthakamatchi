@@ -18,7 +18,7 @@ top10["short_title"] = top10["title"].apply(lambda x: x if len(x) <= 50 else x[:
 
 # Plot horizontal bar chart
 plt.figure(figsize=(10,6))
-plt.barh(top10["short_title"], top10["score"], color='skyblue')
+plt.barh(top10["short_title"], top10["score"], color='cyan')
 plt.xlabel("Score")
 plt.ylabel("Story Title")
 plt.title("Top 10 Stories by Score")
@@ -62,7 +62,7 @@ plt.show()
 fig, axes = plt.subplots(1, 3, figsize=(20,6))
 
 # Chart 1
-axes[0].barh(top10["short_title"], top10["score"], color='skyblue')
+axes[0].barh(top10["short_title"], top10["score"], color='cyan')
 axes[0].set_title("Top 10 Stories by Score")
 axes[0].invert_yaxis()
 
